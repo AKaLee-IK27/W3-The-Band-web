@@ -92,6 +92,10 @@
     bottom: 16px;
 }
 
+#slider .text-discription{
+    margin-top: 16px;
+}
+
 #nav, 
 #nav > li, 
 #nav li a{
