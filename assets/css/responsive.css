@@ -88,6 +88,10 @@
     right: 0;
 }
 
+#slider .slider-text{
+    bottom: 16px;
+}
+
 #nav, 
 #nav > li, 
 #nav li a{
