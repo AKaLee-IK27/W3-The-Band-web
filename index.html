@@ -116,8 +116,8 @@
                             <div class="mt-32 col s-col-1 col-3">
                                 <img src="./assets/img/paris.jpg" alt="New York" class="place-img">
                                 <div class="place-body">
-                                    <h3 class="place-heading">New York</h3>
-                                    <p class="place-time">Fri 27 Nov 2016</p>
+                                    <h3 class="place-heading">Paris</h3>
+                                    <p class="place-time">Sat 28 Nov 2016</p>
                                     <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
                                     <button class="s-full-width place-buy-btn js-buy-ticket">Buy Tickets</button>
                                 </div>
@@ -125,8 +125,8 @@
                             <div class="mt-32 col s-col-1 col-3">
                                 <img src="./assets/img/sanfran.jpg" alt="New York" class="place-img">
                                 <div class="place-body">
-                                    <h3 class="place-heading">New York</h3>
-                                    <p class="place-time">Fri 27 Nov 2016</p>
+                                    <h3 class="place-heading">San Francisco</h3>
+                                    <p class="place-time">Sun 29 Nov 2016</p>
                                     <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
                                     <button class="s-full-width place-buy-btn js-buy-ticket">Buy Tickets</button>
                                 </div>
@@ -297,18 +297,18 @@
             carousel();
 
             function carousel() {
-                var x = document.querySelectorAll('.slider-img');
-                var y = document.querySelectorAll('.slider-text');
+                var sliderImages = document.querySelectorAll('.slider-img');
+                var sliderTexts = document.querySelectorAll('.slider-text');
 
-                for(var i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";
-                    y[i].style.display = "none";
+                for(var i = 0; i < sliderImages.length; i++) {
+                    sliderImages[i].style.display = "none";
+                    sliderTexts[i].style.display = "none";
                 }
 
                 slideIndex++;
-                if(slideIndex > x.length) {slideIndex = 1;}
-                x[slideIndex - 1].style.display = 'block';
-                y[slideIndex - 1].style.display = 'block';
+                if(slideIndex > sliderImages.length) {slideIndex = 1;}
+                sliderImages[slideIndex - 1].style.display = 'block';
+                sliderTexts[slideIndex - 1].style.display = 'block';
 
                 setTimeout(carousel, 2500);
             }
