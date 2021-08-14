@@ -430,8 +430,7 @@ html {
 .contact-form .form-submit-btn:hover{
     color: black;
     background-color: #ccc;
-
-    border: 1px solid #ccc;
+     border: 1px solid #ccc;
 
     cursor: pointer;
 }

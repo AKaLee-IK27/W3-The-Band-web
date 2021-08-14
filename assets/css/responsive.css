@@ -132,4 +132,40 @@
     margin-top: 32px;
 }
 
+/* fix touch effect btn on mobile */
+
+#header .mobile-menu-btn:hover,
+#nav > li:hover > a, 
+#nav .subnav li:hover a,
+.place-buy-btn:hover,
+.contact-form .form-submit-btn:hover
+{
+    color: white;
+    background-color: black;
+}
+
+#nav > li:active > a, 
+#nav .subnav li:active a,
+#header .mobile-menu-btn:active,
+.place-buy-btn:active,
+.contact-form .form-submit-btn:active
+{
+    background-color: gray;
+    background-size: 100%;
+
+    transition: background .2s;
+}
+
+#buy-tickets:hover {
+    background-color: #009688;
+    color: white;
+}
+
+#buy-tickets:active {
+    background-color: #75b8b1;
+    background-size: 100%;
+
+    transition: background .2s;
+}
+
 }
